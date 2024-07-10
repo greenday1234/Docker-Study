@@ -1,0 +1,39 @@
+FROM systemd-init
+
+RUN apt install openjdk-8-jdk -y \
+    && cd /usr/local/src \
+    && wget https://dlcdn.apache.org/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz \
+    && tar xvzf apache-tomcat-${TOMCAT_VERSION}.tar.gz \
+    && mv apache-tomcat-${TOMCAT_VERSION} tomcat \
+    && useradd -M tomcat \
+    && chown tomcat:tomcat -R tomcat/
+
+COPY ./tomcat1/tomcat.service /etc/systemd/system/tomcat.service
+COPY ./tomcat1/context.xml /usr/local/src/tomcat/conf/context.xml.template
+COPY ./tomcat1/server.xml /usr/local/src/tomcat/conf/server.xml.template
+COPY ./tomcat1/mysql_data.jsp /usr/local/src/tomcat/webapps/sample/mysql_data.jsp.template
+
+RUN systemctl daemon-reload \
+    && systemctl enable tomcat \
+    && cd /tmp \
+    && wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-j_${MYSQL_SERVER_VERSION}-1ubuntu22.04_all.deb \
+    && dpkg -i mysql-connector-j_${MYSQL_SERVER_VERSION}-1ubuntu22.04_all.deb \
+    && cp /usr/share/java/mysql-connector-j-${MYSQL_SERVER_VERSION}.jar /usr/local/src/tomcat/lib \
+    && chown tomcat:tomcat /usr/local/src/tomcat/lib/mysql-connector-j-${MYSQL_SERVER_VERSION}.jar
+
+RUN envsubst ' ${DB_USERNAME} ${DB_PASSWORD} ${DB_ADDRESS} ' \
+    < /usr/local/src/tomcat/conf/context.xml.template > \
+    /usr/local/src/tomcat/conf/context.xml
+
+RUN envsubst ' ${WAS_ADDRESS1} ${WAS_ADDRESS2} ' \
+    < /usr/local/src/tomcat/conf/server.xml.template > \
+    /usr/local/src/tomcat/conf/server.xml
+
+RUN mkdir -p webapps/sample/WEB_INF
+
+COPY ./tomcat1/web.xml /usr/local/src/tomcat/webapps/sample/WEB-INF/web.xml
+COPY ./tomcat1/index.jsp /usr/local/src/tomcat/webapps/sample/index.jsp
+
+RUN envsubst ' ${DB_USERNAME} ${DB_PASSWORD} ${DB_ADDRESS} ' \
+    < /usr/local/src/tomcat/webapps/sample/mysql_data.jsp.template > \
+    /usr/local/src/tomcat/webapps/sample/mysql_data.jsp

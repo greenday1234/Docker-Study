@@ -1,0 +1,66 @@
+2024-07-09 08:51:58.050 [info] 
+
+
+
+
+2024-07-09 08:51:58.066 [info] Extension host agent started.
+2024-07-09 08:51:58.315 [info] [<unknown>][7f85af52][ManagementConnection] New connection established.
+2024-07-09 08:51:58.317 [info] [<unknown>][a93767c8][ExtensionHostConnection] New connection established.
+2024-07-09 08:51:58.398 [info] [<unknown>][a93767c8][ExtensionHostConnection] <1436> Launched Extension Host Process.
+2024-07-09 08:56:58.068 [info] New EH opened, aborting shutdown
+2024-07-09 09:42:49.036 [info] [<unknown>][7f85af52][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-07-09 10:11:24.873 [info] [<unknown>][7f85af52][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-07-09 10:11:24.875 [info] [<unknown>][5938ad5b][ManagementConnection] New connection established.
+2024-07-09 10:11:24.876 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/server/node/server.main.js:192:6383)
+    at process.emit (node:events:518:28)
+2024-07-09 10:11:24.880 [info] [<unknown>][e867f51a][ExtensionHostConnection] New connection established.
+2024-07-09 10:11:24.884 [info] [<unknown>][e867f51a][ExtensionHostConnection] <3532> Launched Extension Host Process.
+2024-07-09 10:16:24.916 [info] [<unknown>][7f85af52][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2024-07-09 10:16:25.112 [info] [<unknown>][a93767c8][ExtensionHostConnection] <1436> Extension Host Process exited with code: 0, signal: null.
+2024-07-09 13:03:28.853 [error] CodeExpectedError: Could not find pty on pty host
+    at A.U (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:30817)
+    at A.updateIcon (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:26067)
+    at D.<computed> (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:21292)
+    at Object.call (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:37:5367)
+    at c.s (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:5506)
+    at c.q (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:4947)
+    at b.value (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:4247)
+    at n.B (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:30:741)
+    at n.fire (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:30:958)
+    at process.$e (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:25:11142)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-07-09 13:03:28.855 [error] CodeExpectedError: Could not find pty on pty host
+    at A.U (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:30817)
+    at A.updateTitle (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:26017)
+    at D.<computed> (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:21292)
+    at Object.call (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:37:5367)
+    at c.s (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:5506)
+    at c.q (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:4947)
+    at b.value (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:4247)
+    at n.B (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:30:741)
+    at n.fire (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:30:958)
+    at process.$e (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:25:11142)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-07-09 13:03:29.890 [error] CodeExpectedError: Could not find pty on pty host
+    at A.U (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:30817)
+    at A.updateTitle (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:26017)
+    at D.<computed> (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:56:21292)
+    at Object.call (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:37:5367)
+    at c.s (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:5506)
+    at c.q (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:4947)
+    at b.value (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:35:4247)
+    at n.B (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:30:741)
+    at n.fire (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:30:958)
+    at process.$e (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/platform/terminal/node/ptyHostMain.js:25:11142)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-07-09 13:20:16.594 [info] [<unknown>][41400f83][ManagementConnection] New connection established.
+2024-07-09 13:20:16.601 [info] [<unknown>][1ffbe159][ExtensionHostConnection] New connection established.
+2024-07-09 13:20:16.605 [info] [<unknown>][1ffbe159][ExtensionHostConnection] <83722> Launched Extension Host Process.
+2024-07-09 13:20:42.829 [info] [<unknown>][5938ad5b][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

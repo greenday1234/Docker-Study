@@ -1,0 +1,29 @@
+FROM ubuntu:22.04
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+ENV TZ=Asia/Seoul
+
+RUN apt update \
+    && apt install -qq -y init systemd \
+    && apt install -qq -y build-essential \
+    && apt install -qq -y tzdata locales\
+    && apt install -qq -y openssh-server \
+    && apt install -qq -y vim curl \
+    && apt-get clean autoclean \
+    && apt-get autoremove -y \
+    && rm -rf /var/lib/{apt, dpkg, cache, log}
+
+#SSH 서비스를 부팅 시 자동 시작
+RUN systemctl enable ssh.service
+
+## root 계정의 비밀번호 설정은 docker-compose 에서!
+
+RUN locale-gen ko_KR.utf8
+ENV LC_ALL=ko_KR.utf8
+WORKDIR /root
+
+EXPOSE 22 
+
+# 컨테이너가 시작될 때 systemd 를 시작
+CMD ["/sbin/init"]

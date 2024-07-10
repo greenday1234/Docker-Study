@@ -1,0 +1,11 @@
+2024-07-09 13:20:17.482 [info] Extension host with pid 83722 started
+2024-07-09 13:20:17.583 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-09 13:20:17.629 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Lock acquired.
+2024-07-09 13:20:17.724 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-09 13:20:17.875 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-09 13:20:17.876 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-09 13:20:18.053 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-07-09 13:20:18.184 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onLanguage:dockerfile'
+2024-07-09 13:20:18.704 [info] Eager extensions activated
+2024-07-09 13:20:18.705 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-09 13:20:18.706 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'

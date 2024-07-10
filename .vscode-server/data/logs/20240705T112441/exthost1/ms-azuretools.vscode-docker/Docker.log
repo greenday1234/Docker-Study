@@ -1,0 +1,12 @@
+2024-07-05 12:10:43.267 [error] Error response from daemon: driver failed programming external connectivity on endpoint nginx1 (7c28c7958fb1516d40129763187ec52b15418c28f2dbfd18b5bcf92b1b56dfae): failed to bind port 0.0.0.0:80/tcp: Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
+
+2024-07-05 12:10:43.267 [error] Error: failed to start containers: f547d64805263c63de80fc3293e1f9c9e0620436e273361d161db91ad0460990
+
+2024-07-05 12:10:43.274 [info] Error: Error response from daemon: driver failed programming external connectivity on endpoint nginx1 (7c28c7958fb1516d40129763187ec52b15418c28f2dbfd18b5bcf92b1b56dfae): failed to bind port 0.0.0.0:80/tcp: Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
+Error: failed to start containers: f547d64805263c63de80fc3293e1f9c9e0620436e273361d161db91ad0460990
+2024-07-05 12:10:52.377 [error] Error response from daemon: driver failed programming external connectivity on endpoint nginx1 (f1e358d674862ae8dfcc9f5e2bf7e5b13d1ff7f04338a8382d6e19d30f6daa7b): failed to bind port 0.0.0.0:80/tcp: Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
+
+2024-07-05 12:10:52.377 [error] Error: failed to start containers: f547d64805263c63de80fc3293e1f9c9e0620436e273361d161db91ad0460990
+
+2024-07-05 12:10:52.381 [info] Error: Error response from daemon: driver failed programming external connectivity on endpoint nginx1 (f1e358d674862ae8dfcc9f5e2bf7e5b13d1ff7f04338a8382d6e19d30f6daa7b): failed to bind port 0.0.0.0:80/tcp: Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use
+Error: failed to start containers: f547d64805263c63de80fc3293e1f9c9e0620436e273361d161db91ad0460990

@@ -1,0 +1,18 @@
+2024-07-09 17:23:39.984 [info] Extension host with pid 2739 started
+2024-07-09 17:23:39.984 [error] Error: EEXIST: file already exists, open '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock'
+2024-07-09 17:23:39.992 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-07-09 17:23:39.997 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': The pid 83722 appears to be gone.
+2024-07-09 17:23:39.997 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Deleting a stale lock.
+2024-07-09 17:23:40.001 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Lock acquired.
+2024-07-09 17:23:40.091 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-09 17:23:40.096 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-07-09 17:23:40.226 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-09 17:23:40.267 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-09 17:23:40.268 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-09 17:23:40.539 [info] Eager extensions activated
+2024-07-09 17:23:40.539 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-09 17:23:40.540 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-09 17:23:40.662 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onLanguage:dockerfile'
+2024-07-09 17:34:00.156 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2024-07-09 17:37:38.027 [error] Error: read ECONNRESET
+	at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)

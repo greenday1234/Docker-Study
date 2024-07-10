@@ -1,0 +1,46 @@
+services:
+# 해당 구조 및 설정을 다른 컨테이너에서도 동일하게 사용하기 위해 was 이름의 앵커를 사용
+# 일종의 상속(extends) 형태
+    apache1: &was
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        container_name: apache1
+        hostname: apache1 
+        # 특권모드
+        privileged: true
+        # 컨테이너 실행 중 터미널 사용 가능 
+        stdin_open: true   
+        # 컨테이너 중지 시 다시 시작          
+        restart: always
+        ports:
+            - "2001:22"
+# 단 이 방식으로 비밀번호를 설정한다면 모든 컨테이너에서 비밀번호를 설정하게 된다.(앵커에서 작성했기 때문)
+        command: bash -c "echo root:${ROOT_PASSWORD} | chpasswd "
+    
+    tomcat1:
+# 위에서 설정한 was 앵커 적용
+# 앵커와 다른 부분은 수정해서 작성
+        <<: *was
+        container_name: tomcat1
+        hostname: tomcat1          
+        ports: 
+            - "3001:22"
+# 비밀번호 설정 적용은 앞에서 했으므로 bash Shell 을 사용하도록 설정
+
+    mysql1:
+        <<: *was
+        container_name: mysql1 
+        hostname: mysql1        
+        ports: 
+            - "6001:22"
+            - "33306:3306"
+
+    nginx1:
+        <<: *was
+        container_name: nginx1 
+        hostname: nginx1       
+        ports: 
+            - "5001:22"
+            - "443:443"
+            - "80:80"

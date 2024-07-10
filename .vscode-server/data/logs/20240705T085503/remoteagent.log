@@ -1,0 +1,25 @@
+2024-07-05 08:55:03.772 [info] 
+
+
+
+
+2024-07-05 08:55:03.786 [info] Extension host agent started.
+2024-07-05 08:55:03.874 [info] [<unknown>][d10c46cd][ExtensionHostConnection] New connection established.
+2024-07-05 08:55:03.880 [info] [<unknown>][82347e94][ManagementConnection] New connection established.
+2024-07-05 08:55:03.972 [info] [<unknown>][d10c46cd][ExtensionHostConnection] <2239> Launched Extension Host Process.
+2024-07-05 09:00:03.787 [info] New EH opened, aborting shutdown
+2024-07-05 09:35:03.166 [info] [<unknown>][82347e94][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-07-05 10:51:48.351 [info] [<unknown>][82347e94][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-07-05 10:51:48.352 [info] [<unknown>][0302daf6][ManagementConnection] New connection established.
+2024-07-05 10:51:48.353 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/out/vs/server/node/server.main.js:192:6383)
+    at process.emit (node:events:518:28)
+2024-07-05 10:51:48.358 [info] [<unknown>][34e77921][ExtensionHostConnection] New connection established.
+2024-07-05 10:51:48.361 [info] [<unknown>][34e77921][ExtensionHostConnection] <5509> Launched Extension Host Process.
+2024-07-05 10:52:29.842 [info] [<unknown>][03ebc7b1][ManagementConnection] New connection established.
+2024-07-05 10:52:29.851 [info] [<unknown>][cce1a42d][ExtensionHostConnection] New connection established.
+2024-07-05 10:52:29.855 [info] [<unknown>][cce1a42d][ExtensionHostConnection] <5694> Launched Extension Host Process.
+2024-07-05 10:52:43.183 [info] [<unknown>][0302daf6][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-07-05 10:56:48.498 [info] [<unknown>][82347e94][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2024-07-05 10:56:48.641 [info] [<unknown>][d10c46cd][ExtensionHostConnection] <2239> Extension Host Process exited with code: 0, signal: null.
+2024-07-05 10:57:30.087 [info] [<unknown>][34e77921][ExtensionHostConnection] <5509> Extension Host Process exited with code: 0, signal: null.

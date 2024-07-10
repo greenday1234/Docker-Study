@@ -1,0 +1,23 @@
+2024-07-05 13:18:16.104 [info] Extension host with pid 29156 started
+2024-07-05 13:18:16.104 [error] Error: EEXIST: file already exists, open '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock'
+2024-07-05 13:18:16.114 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-07-05 13:18:16.122 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': The lock does not look stale, elapsed: 98 ms, giving up.
+2024-07-05 13:18:16.125 [error] Error: EEXIST: file already exists, open '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d-1/vscode.lock'
+2024-07-05 13:18:16.126 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d-1/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-07-05 13:18:16.127 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d-1/vscode.lock': The pid 5694 appears to be gone.
+2024-07-05 13:18:16.127 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d-1/vscode.lock': Deleting a stale lock.
+2024-07-05 13:18:16.130 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d-1/vscode.lock': Lock acquired.
+2024-07-05 13:18:16.199 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onView:dockerContainers'
+2024-07-05 13:18:16.203 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-05 13:18:17.000 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-05 13:18:17.230 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-05 13:18:17.231 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-05 13:18:17.484 [info] Eager extensions activated
+2024-07-05 13:18:17.484 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-05 13:18:17.485 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-05 13:18:18.511 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-07-05 13:19:28.481 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-07-05 13:49:45.151 [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+2024-07-05 13:55:03.257 [info] Extension host terminating: renderer disconnected for too long (2)
+2024-07-05 13:55:03.258 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-07-05 13:55:03.289 [info] Extension host with pid 29156 exiting with code 0

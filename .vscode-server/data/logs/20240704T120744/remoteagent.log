@@ -1,0 +1,39 @@
+2024-07-04 12:07:44.466 [info] 
+
+
+
+
+2024-07-04 12:07:44.478 [info] Extension host agent started.
+2024-07-04 12:07:44.537 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+2024-07-04 12:07:44.548 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+2024-07-04 12:07:44.785 [info] [<unknown>][61e82956][ExtensionHostConnection] New connection established.
+2024-07-04 12:07:44.790 [info] [<unknown>][ba36843a][ManagementConnection] New connection established.
+2024-07-04 12:07:44.852 [info] [<unknown>][61e82956][ExtensionHostConnection] <1606> Launched Extension Host Process.
+2024-07-04 12:08:14.641 [info] Getting Manifest... ms-azuretools.vscode-docker
+2024-07-04 12:08:15.135 [info] Installing extension: ms-azuretools.vscode-docker file:///root/.vscode-server/extensions/extensions.json
+2024-07-04 12:08:18.860 [info] Extension signature verification result for ms-azuretools.vscode-docker: Success. Executed: true. Duration: 2719ms.
+2024-07-04 12:08:19.010 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-azuretools.vscode-docker-1.29.1: ms-azuretools.vscode-docker
+2024-07-04 12:08:19.016 [info] Renamed to /root/.vscode-server/extensions/ms-azuretools.vscode-docker-1.29.1
+2024-07-04 12:08:19.085 [info] Extension installed successfully: ms-azuretools.vscode-docker file:///root/.vscode-server/extensions/extensions.json
+2024-07-04 12:08:22.101 [info] Getting Manifest... hashicorp.terraform
+2024-07-04 12:08:22.274 [info] Installing extension: hashicorp.terraform file:///root/.vscode-server/extensions/extensions.json
+2024-07-04 12:08:24.801 [info] Extension signature verification result for hashicorp.terraform: Success. Executed: true. Duration: 1390ms.
+2024-07-04 12:08:25.229 [info] Extracted extension to file:///root/.vscode-server/extensions/hashicorp.terraform-2.31.0-linux-x64: hashicorp.terraform
+2024-07-04 12:08:25.232 [info] Renamed to /root/.vscode-server/extensions/hashicorp.terraform-2.31.0-linux-x64
+2024-07-04 12:08:25.354 [info] Extension installed successfully: hashicorp.terraform file:///root/.vscode-server/extensions/extensions.json
+2024-07-04 12:09:21.327 [info] [<unknown>][b7e40b17][ManagementConnection] New connection established.
+2024-07-04 12:09:21.334 [info] [<unknown>][1d4da691][ExtensionHostConnection] New connection established.
+2024-07-04 12:09:21.337 [info] [<unknown>][1d4da691][ExtensionHostConnection] <1828> Launched Extension Host Process.
+2024-07-04 12:12:44.479 [info] New EH opened, aborting shutdown
+2024-07-04 12:12:44.480 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/root/.vscode-server/cli/servers/Stable-5437499feb04f7a586f677b155b039bc2b3669eb/server/out/vs/server/node/server.main.js:191:6373)
+    at process.emit (node:events:518:28)
+2024-07-04 12:14:21.869 [info] [<unknown>][61e82956][ExtensionHostConnection] <1606> Extension Host Process exited with code: 0, signal: null.
+2024-07-04 13:33:20.830 [info] [<unknown>][58343397][ExtensionHostConnection] New connection established.
+2024-07-04 13:33:20.831 [info] [<unknown>][25aa8918][ManagementConnection] New connection established.
+2024-07-04 13:33:20.836 [info] [<unknown>][58343397][ExtensionHostConnection] <7465> Launched Extension Host Process.
+2024-07-04 13:33:57.710 [info] [<unknown>][25aa8918][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-07-04 13:38:21.162 [info] [<unknown>][1d4da691][ExtensionHostConnection] <1828> Extension Host Process exited with code: 0, signal: null.
+2024-07-04 16:34:06.169 [info] [<unknown>][58343397][ExtensionHostConnection] <7465> Extension Host Process exited with code: 0, signal: null.
+2024-07-04 16:34:06.171 [info] Last EH closed, waiting before shutting down
+2024-07-04 16:39:06.171 [info] Last EH closed, shutting down

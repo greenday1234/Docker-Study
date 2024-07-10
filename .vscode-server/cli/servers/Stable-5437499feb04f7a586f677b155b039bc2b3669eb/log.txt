@@ -1,0 +1,36 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-c0fba211-e127-4274-b6ed-6c256a0ce566
+Extension host agent listening on /tmp/code-c0fba211-e127-4274-b6ed-6c256a0ce566
+
+[12:07:44] 
+
+
+
+
+[12:07:44] Extension host agent started.
+[12:07:44] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+[12:07:44] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+[12:07:44] [<unknown>][61e82956][ExtensionHostConnection] New connection established.
+[12:07:44] [<unknown>][ba36843a][ManagementConnection] New connection established.
+[12:07:44] [<unknown>][61e82956][ExtensionHostConnection] <1606> Launched Extension Host Process.
+[12:08:14] Getting Manifest... ms-azuretools.vscode-docker
+[12:08:15] Installing extension: ms-azuretools.vscode-docker file:///root/.vscode-server/extensions/extensions.json
+[12:08:18] Extension signature verification result for ms-azuretools.vscode-docker: Success. Executed: true. Duration: 2719ms.
+[12:08:19] Extracted extension to file:///root/.vscode-server/extensions/ms-azuretools.vscode-docker-1.29.1: ms-azuretools.vscode-docker
+[12:08:19] Renamed to /root/.vscode-server/extensions/ms-azuretools.vscode-docker-1.29.1
+[12:08:19] Extension installed successfully: ms-azuretools.vscode-docker file:///root/.vscode-server/extensions/extensions.json
+[12:08:22] Getting Manifest... hashicorp.terraform
+[12:08:22] Installing extension: hashicorp.terraform file:///root/.vscode-server/extensions/extensions.json
+[12:08:24] Extension signature verification result for hashicorp.terraform: Success. Executed: true. Duration: 1390ms.
+[12:08:25] Extracted extension to file:///root/.vscode-server/extensions/hashicorp.terraform-2.31.0-linux-x64: hashicorp.terraform
+[12:08:25] Renamed to /root/.vscode-server/extensions/hashicorp.terraform-2.31.0-linux-x64
+[12:08:25] Extension installed successfully: hashicorp.terraform file:///root/.vscode-server/extensions/extensions.json
+[12:09:21] [<unknown>][b7e40b17][ManagementConnection] New connection established.
+[12:09:21] [<unknown>][1d4da691][ExtensionHostConnection] New connection established.
+[12:09:21] [<unknown>][1d4da691][ExtensionHostConnection] <1828> Launched Extension Host Process.

@@ -1,0 +1,17 @@
+FROM systemd-init
+
+ARG DOMAIN
+
+ENV DOMAIN=${DOMAIN}
+
+RUN apt install nginx -y
+
+COPY ./nginx1/chanhui1.shop.conf /etc/nginx/conf.d/${DOMAIN}.conf.template
+COPY ./nginx1/default /etc/nginx/sites-available/default
+
+RUN systemctl enable nginx \
+    && mkdir -p /etc/nginx/${DOMAIN}
+
+RUN envsubst ' ${DOMAIN} ${WEB_ADDRESS1} ${WEB_ADDRESS2} ' \
+    < /etc/nginx/conf.d/${DOMAIN}.conf.template > \
+    /etc/nginx/conf.d/${DOMAIN}.conf

@@ -1,0 +1,14 @@
+FROM systemd-init
+
+COPY ./apache/chanhui1.shop.conf /etc/apache2/sites-available/${DOMAIN}.conf.template
+
+RUN apt install apache2 -y \
+    && cd /etc/apache2/sites-available
+
+RUN envsubst ' ${DOMAIN} ${INTERNAL_LB_ADDRESS} ' \
+    < /etc/apache2/sites-available/${DOMAIN}.conf.template> \
+    /etc/apache2/sites-available/${DOMAIN}.conf
+
+RUN a2ensite ${DOMAIN}.conf \
+    && a2enmod proxy_http \
+    && systemctl enable apache2

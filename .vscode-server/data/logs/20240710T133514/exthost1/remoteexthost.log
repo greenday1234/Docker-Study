@@ -1,0 +1,79 @@
+2024-07-10 13:35:15.723 [info] Extension host with pid 2946 started
+2024-07-10 13:35:15.723 [error] Error: EEXIST: file already exists, open '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock'
+2024-07-10 13:35:15.742 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-07-10 13:35:15.756 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': The pid 2739 appears to be gone.
+2024-07-10 13:35:15.756 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Deleting a stale lock.
+2024-07-10 13:35:15.762 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/decbaa71f00ccc70ee4822bb32cad01d/vscode.lock': Lock acquired.
+2024-07-10 13:35:15.812 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-10 13:35:15.814 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-07-10 13:35:15.814 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onLanguage:dockercompose'
+2024-07-10 13:35:16.399 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-10 13:35:16.432 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-10 13:35:16.433 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-10 13:35:16.827 [info] Eager extensions activated
+2024-07-10 13:35:16.828 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-10 13:35:16.829 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-10 13:35:27.676 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3314
+2024-07-10 13:35:28.275 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3314
+2024-07-10 13:35:28.766 [error] Error: No such branch: master.
+	at F.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:935457)
+	at async T.retryRun (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1028070)
+	at async T.run (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1027674)
+	at async T.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016055)
+	at async T.getBranchBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016341)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:945804)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:940157)
+2024-07-10 13:35:29.316 [error] Error: No such branch: master.
+	at F.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:935457)
+	at async T.retryRun (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1028070)
+	at async T.run (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1027674)
+	at async T.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016055)
+	at async T.getBranchBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016341)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:945804)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:940157)
+2024-07-10 13:35:31.493 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3314
+2024-07-10 13:35:32.501 [error] Error: No such branch: master.
+	at F.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:935457)
+	at async T.retryRun (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1028070)
+	at async T.run (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1027674)
+	at async T.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016055)
+	at async T.getBranchBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016341)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:945804)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:940157)
+2024-07-10 13:35:36.585 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3314
+2024-07-10 13:35:37.595 [error] Error: No such branch: master.
+	at F.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:935457)
+	at async T.retryRun (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1028070)
+	at async T.run (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1027674)
+	at async T.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016055)
+	at async T.getBranchBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016341)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:945804)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:940157)
+2024-07-10 13:35:41.721 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3314
+2024-07-10 13:35:42.736 [error] Error: No such branch: master.
+	at F.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:935457)
+	at async T.retryRun (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1028070)
+	at async T.run (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1027674)
+	at async T.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016055)
+	at async T.getBranchBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016341)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:945804)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:940157)
+2024-07-10 13:35:46.805 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3314
+2024-07-10 13:35:47.812 [error] Error: No such branch: master.
+	at F.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:935457)
+	at async T.retryRun (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1028070)
+	at async T.run (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1027674)
+	at async T.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016055)
+	at async T.getBranchBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016341)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:945804)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:940157)
+2024-07-10 13:35:48.954 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-07-10 13:35:51.886 [warning] [Decorations] CAPPING events from decorations provider vscode.git 3314
+2024-07-10 13:35:52.891 [error] Error: No such branch: master.
+	at F.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:935457)
+	at async T.retryRun (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1028070)
+	at async T.run (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1027674)
+	at async T.getBranch (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016055)
+	at async T.getBranchBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:1016341)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:945804)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/root/.vscode-server/cli/servers/Stable-ea1445cc7016315d0f5728f8e8b12a45dc0a7286/server/extensions/git/dist/main.js:2:940157)

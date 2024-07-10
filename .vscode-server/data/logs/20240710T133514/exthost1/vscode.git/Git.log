@@ -1,0 +1,79 @@
+2024-07-10 13:35:16.907 [info] Log level: Info
+2024-07-10 13:35:16.907 [info] Validating found git in: "git"
+2024-07-10 13:35:16.907 [info] Using git "2.34.1" from "git"
+2024-07-10 13:35:16.907 [info] > git rev-parse --show-toplevel [35ms]
+2024-07-10 13:35:16.907 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:16.907 [info] > git rev-parse --show-toplevel [33ms]
+2024-07-10 13:35:16.907 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:16.909 [info] > git rev-parse --show-toplevel [3ms]
+2024-07-10 13:35:16.909 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:16.914 [info] > git rev-parse --show-toplevel [2ms]
+2024-07-10 13:35:16.914 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:16.918 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-10 13:35:16.918 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:16.922 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-10 13:35:16.922 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:16.925 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-10 13:35:16.925 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:16.929 [info] > git rev-parse --show-toplevel [1ms]
+2024-07-10 13:35:16.929 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:20.488 [info] > git rev-parse --show-toplevel [2ms]
+2024-07-10 13:35:20.488 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-07-10 13:35:27.485 [info] > git rev-parse --show-toplevel [2ms]
+2024-07-10 13:35:27.490 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-07-10 13:35:27.501 [info] Open repository: /root
+2024-07-10 13:35:27.509 [info] No remotes found in the git config file.
+2024-07-10 13:35:27.510 [info] > git config --get commit.template [4ms]
+2024-07-10 13:35:27.511 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-07-10 13:35:27.511 [warning] No such branch: master.
+2024-07-10 13:35:27.606 [info] > git status -z -uall [91ms]
+2024-07-10 13:35:27.692 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [63ms]
+2024-07-10 13:35:27.692 [warning] No such branch: master.
+2024-07-10 13:35:27.694 [info] > git config --get commit.template [2ms]
+2024-07-10 13:35:27.697 [info] No remotes found in the git config file.
+2024-07-10 13:35:27.698 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-07-10 13:35:27.698 [warning] No such branch: master.
+2024-07-10 13:35:28.201 [info] > git status -z -uall [500ms]
+2024-07-10 13:35:28.312 [info] > git check-ignore -v -z --stdin [8ms]
+2024-07-10 13:35:28.315 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [79ms]
+2024-07-10 13:35:28.315 [warning] No such branch: master.
+2024-07-10 13:35:28.769 [info] > git show --textconv :test/docker-compose.yml [8ms]
+2024-07-10 13:35:28.770 [info] > git ls-files --stage -- /root/test/docker-compose.yml [6ms]
+2024-07-10 13:35:31.424 [info] No remotes found in the git config file.
+2024-07-10 13:35:31.425 [info] > git config --get commit.template [4ms]
+2024-07-10 13:35:31.425 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-07-10 13:35:31.425 [warning] No such branch: master.
+2024-07-10 13:35:31.455 [info] > git status -z -uall [27ms]
+2024-07-10 13:35:31.499 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [34ms]
+2024-07-10 13:35:31.499 [warning] No such branch: master.
+2024-07-10 13:35:36.506 [info] > git config --get commit.template [0ms]
+2024-07-10 13:35:36.509 [info] No remotes found in the git config file.
+2024-07-10 13:35:36.511 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-07-10 13:35:36.511 [warning] No such branch: master.
+2024-07-10 13:35:36.544 [info] > git status -z -uall [31ms]
+2024-07-10 13:35:36.591 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [31ms]
+2024-07-10 13:35:36.591 [warning] No such branch: master.
+2024-07-10 13:35:41.602 [info] No remotes found in the git config file.
+2024-07-10 13:35:41.604 [info] > git config --get commit.template [6ms]
+2024-07-10 13:35:41.606 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2024-07-10 13:35:41.606 [warning] No such branch: master.
+2024-07-10 13:35:41.651 [info] > git status -z -uall [42ms]
+2024-07-10 13:35:41.734 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [54ms]
+2024-07-10 13:35:41.734 [warning] No such branch: master.
+2024-07-10 13:35:46.736 [info] No remotes found in the git config file.
+2024-07-10 13:35:46.737 [info] > git config --get commit.template [4ms]
+2024-07-10 13:35:46.739 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-07-10 13:35:46.739 [warning] No such branch: master.
+2024-07-10 13:35:46.768 [info] > git status -z -uall [27ms]
+2024-07-10 13:35:46.810 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [32ms]
+2024-07-10 13:35:46.810 [warning] No such branch: master.
+2024-07-10 13:35:50.343 [info] > git ls-files --stage -- /root/test/docker-compose.yml [3ms]
+2024-07-10 13:35:50.347 [info] > git cat-file -s 7c6c074f3e265697204b7a0d417df67cd3966370 [1ms]
+2024-07-10 13:35:50.364 [info] > git show --textconv :test/docker-compose.yml [2ms]
+2024-07-10 13:35:51.817 [info] No remotes found in the git config file.
+2024-07-10 13:35:51.818 [info] > git config --get commit.template [4ms]
+2024-07-10 13:35:51.818 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-07-10 13:35:51.818 [warning] No such branch: master.
+2024-07-10 13:35:51.845 [info] > git status -z -uall [24ms]
+2024-07-10 13:35:51.890 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [34ms]
+2024-07-10 13:35:51.891 [warning] No such branch: master.

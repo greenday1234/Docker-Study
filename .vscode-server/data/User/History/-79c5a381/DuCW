@@ -1,0 +1,14 @@
+FROM systemd-init
+
+RUN apt install mysql-server -y
+
+COPY ./database/my.cnf /etc/mysql/my.cnf
+COPY ./database/init.sql /docker-entrypoint-initdb.d/init.sql.template
+
+RUN envsubst ' ${DB_USERNAME} ${DB_PASSWORD} ' \
+    < /docker-entrypoint-initdb.d/init.sql.template > \
+    /docker-entrypoint-initdb.d/init.sql
+
+RUN systemctl enable mysql
+
+CMD ["mysql -u root < /docker-entrypoint-initdb.d/init.sql"]

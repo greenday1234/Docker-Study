@@ -1,0 +1,83 @@
+services:
+# 해당 구조 및 설정을 다른 컨테이너에서도 동일하게 사용하기 위해 was 이름의 앵커를 사용
+# 일종의 상속(extends) 형태
+    apache1: &was
+        build:
+            context: .
+            dockerfile: ./DockerfileApache
+        container_name: apache1
+        hostname: apache1 
+        # 특권모드
+        privileged: true
+        # 컨테이너 실행 중 터미널 사용 가능 
+        stdin_open: true   
+        # 컨테이너 중지 시 다시 시작          
+        restart: always
+        ports:
+            - "2001:22"
+# 컨테이너 실행 시 비밀번호 설정 및 systemd 의 init 실행
+# **참고** 
+# + Dockerfile 의 CMD 명령어와 docker-compose.yml 의 commend 명령어가 둘 다 존재한다면 docker-compose.yml의 명령어가 실행된다.
+        command: bash -c "echo root:${ROOT_PASSWORD} | chpasswd && /sbin/init"
+
+    apache2:
+        <<: *was
+        container_name: apache2
+        hostname: apache2
+        ports:
+            - "2002:22"
+
+    tomcat1:
+        # 위에서 설정한 was 앵커 적용
+        # 앵커와 다른 부분은 수정해서 작성
+        <<: *was
+        build:
+            context: .
+            dockerfile: ./DockerfileTomcat1
+        container_name: tomcat1
+        hostname: tomcat1          
+        ports: 
+            - "3001:22"
+    
+    tomcat2:
+        <<: *was
+        build:
+            context: .
+            dockerfile: ./DockerfileTomcat2
+        container_name: tomcat2
+        hostname: tomcat2
+        ports:
+            - "3002:22"
+
+    mysql1:
+        <<: *was
+        build:
+            context: .
+            dockerfile: ./DockerfileMysql
+        container_name: mysql1 
+        hostname: mysql1        
+        ports: 
+            - "6001:22"
+            - "33306:3306"
+
+    nginx1:
+        <<: *was
+        build:
+            context: .
+            dockerfile: ./DockerfileNginx1
+        container_name: nginx1 
+        hostname: nginx1       
+        ports: 
+            - "5001:22"
+            - "443:443"
+            - "80:80"
+
+    nginx2:
+        <<: *was
+        build:
+            context: .
+            dockerfile: ./DockerfileNginx2
+        container_name: nginx2
+        hostname: nginx2       
+        ports: 
+            - "5002:22"

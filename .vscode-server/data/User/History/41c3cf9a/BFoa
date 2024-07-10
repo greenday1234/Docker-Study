@@ -1,0 +1,21 @@
+FROM systemd-init
+
+ARG DOMAIN
+
+ENV DOMAIN=${DOMAIN}
+
+RUN install nginx -y \
+    && vim /etc/nginx/sites-available/default \
+    && systemctl enable nginx \
+    && systemctl start nginx \
+    && systemctl status nginx \
+    && cd /etc/nginx \
+    && mkdir ${DOMAIN}
+
+COPY ./nginx1/chanhui1.shop.conf /ets/nginx/conf.d/${DOMAIN}.conf
+
+RUN systemctl restart nginx \
+    && curl localhost
+
+
+

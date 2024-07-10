@@ -1,0 +1,31 @@
+FROM systemd-init
+
+ARG DOMAIN
+
+ENV DOMAIN=${DOMAIN}
+
+COPY ./apache/chanhui1.shop.conf /etc/apache2/sites-available/${DOMAIN}.conf.template
+
+RUN install apache2 -y \
+    && cd /etc/apache2/sites-available
+
+RUN envsubst '${DOMAIN} ${INTERNAL_LB_ADDRESS}' \
+    < /etc/apache2/sites-available/${DOMAIN}.conf.template> \
+    /etc/apache2/sites-available/${DOMAIN}.conf
+
+RUN a2ensite ${DOMAIN}.conf \
+    && a2enmod proxy_http \
+    && systemctl enable apache2
+
+apt install nginx -y
+
+vim /etc/nginx/sites-available/default
+
+systemctl enable nginx
+
+cd /etc/nginx
+mkdir [domain] # SSL 인증키 보관 디렉토리
+
+vim conf.d/[domain].conf
+
+systemctl restart nginx

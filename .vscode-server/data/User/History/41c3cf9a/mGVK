@@ -1,0 +1,15 @@
+FROM systemd-init
+
+COPY ./nginx1/chanhui1.shop.conf /etc/nginx/conf.d/${DOMAIN}.conf.template
+
+RUN install nginx -y \
+    && vim /etc/nginx/sites-available/default \
+    && systemctl enable nginx \
+    && cd /etc/nginx \
+    && mkdir ${DOMAIN}
+
+RUN envsubst '${DOMAIN} ${WEB_ADDRESS1} ${WEB_ADDRESS2}' \
+    < /etc/nginx/conf.d/${DOMAIN}.conf.template > \
+    /etc/nginx/conf.d/${DOMAIN}.conf
+
+RUN systemctl restart nginx
