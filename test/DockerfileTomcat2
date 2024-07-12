@@ -6,7 +6,9 @@ RUN apt install openjdk-17-jdk -y \
     && tar xvzf apache-tomcat-${TOMCAT_VERSION}.tar.gz \
     && mv apache-tomcat-${TOMCAT_VERSION} tomcat
 
-COPY ./tomcat2/ROOT.jar /
+RUN rm -rf /usr/local/src/tomcat/webapps/ROOT
+
+COPY ./tomcat2/ROOT.war /usr/local/src/tomcat/webapps/
 COPY ./tomcat2/tomcat.service /etc/systemd/system/tomcat.service
 COPY ./tomcat2/context.xml /usr/local/src/tomcat/conf/context.xml.template
 COPY ./tomcat2/server.xml /usr/local/src/tomcat/conf/server.xml.template

@@ -20,6 +20,9 @@ services:
 # + Dockerfile 의 CMD 명령어와 docker-compose.yml 의 commend 명령어가 둘 다 존재한다면 docker-compose.yml의 명령어가 실행된다.
         command: bash -c "echo root:${ROOT_PASSWORD} | chpasswd && /sbin/init"
 
+# .env 파일은 env_file: 로 따로 설정하지 않아도 docker-compose 에서 자동으로 인식함
+# env.apache, env.nginx 등의 이름인 경우에만 설정하면 된다
+
     apache2:
         <<: *was
         container_name: apache2
