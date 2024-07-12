@@ -1,0 +1,17 @@
+2024-07-12 17:23:25.288 [info] Extension host with pid 62851 started
+2024-07-12 17:23:25.288 [error] Error: EEXIST: file already exists, open '/root/.vscode-server/data/User/workspaceStorage/3ea97fe18bdc7d14897ddeea3eecf9c2/vscode.lock'
+2024-07-12 17:23:25.296 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/3ea97fe18bdc7d14897ddeea3eecf9c2/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-07-12 17:23:25.304 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/3ea97fe18bdc7d14897ddeea3eecf9c2/vscode.lock': The lock does not look stale, elapsed: 584 ms, giving up.
+2024-07-12 17:23:25.308 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/3ea97fe18bdc7d14897ddeea3eecf9c2-1/vscode.lock': Lock acquired.
+2024-07-12 17:23:25.452 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-07-12 17:23:25.453 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-12 17:23:25.455 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onLanguage:dockercompose'
+2024-07-12 17:23:26.113 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-12 17:23:26.166 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-12 17:23:26.166 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-12 17:23:26.562 [info] Eager extensions activated
+2024-07-12 17:23:26.562 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-12 17:23:26.563 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-12 17:32:57.686 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-07-12 17:49:01.388 [error] Error: read ECONNRESET
+	at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)

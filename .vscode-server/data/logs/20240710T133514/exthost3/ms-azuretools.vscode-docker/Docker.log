@@ -1,0 +1,14 @@
+2024-07-10 16:00:56.082 [info] Error: cannot open docker://3857c9f0c88f3aeb8255d3c4848e35aa6af1dc3d7881dfadbd4b822afe7b40a1/usr/local/src/tomcat/webapps/study-0.0.1-SNAPSHOT/WEB-INF/classes/docker/study/controller/BasicController.class?fileType%3D1%26ctime%3D0%26mtime%3D0%26size%3D0%26containerOS%3Dlinux%26path%3D%252Fusr%252Flocal%252Fsrc%252Ftomcat%252Fwebapps%252Fstudy-0.0.1-SNAPSHOT%252FWEB-INF%252Fclasses%252Fdocker%252Fstudy%252Fcontroller%252FBasicController.class. Detail: File seems to be binary and cannot be opened as text
+2024-07-10 16:01:00.773 [info] Error: cannot open docker://3857c9f0c88f3aeb8255d3c4848e35aa6af1dc3d7881dfadbd4b822afe7b40a1/usr/local/src/tomcat/webapps/study-0.0.1-SNAPSHOT/WEB-INF/classes/docker/study/controller/BasicController.class?fileType%3D1%26ctime%3D0%26mtime%3D0%26size%3D0%26containerOS%3Dlinux%26path%3D%252Fusr%252Flocal%252Fsrc%252Ftomcat%252Fwebapps%252Fstudy-0.0.1-SNAPSHOT%252FWEB-INF%252Fclasses%252Fdocker%252Fstudy%252Fcontroller%252FBasicController.class. Detail: File seems to be binary and cannot be opened as text
+2024-07-10 16:40:27.188 [error] stat: cannot statx '/usr/local/src/tomcat/webapps/study-0.0.1-SNAPSHOT/WEB-INF/classes/static/*'
+2024-07-10 16:40:27.189 [error] : No such file or directory
+
+2024-07-10 17:02:50.736 [error] stat: cannot statx '/usr/src/*': No such file or directory
+
+2024-07-10 17:46:43.033 [error] stat: cannot statx '/usr/src/*'
+2024-07-10 17:46:43.034 [error] : No such file or directory
+
+2024-07-10 17:47:02.623 [error] stat: cannot statx '/usr/src/*': No such file or directory
+
+2024-07-10 17:47:25.677 [error] stat: cannot statx '/usr/src/*': No such file or directory
+

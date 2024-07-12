@@ -1,0 +1,13 @@
+services:
+    tomcat1:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        container_name: tomcat1
+        hostname: tomcat1
+        privileged: true
+        stdin_open: true   
+        restart: always
+        ports:
+            - "22:8080"
+        command: bash -c "echo root:${ROOT_PASSWORD} | chpasswd && /sbin/init"

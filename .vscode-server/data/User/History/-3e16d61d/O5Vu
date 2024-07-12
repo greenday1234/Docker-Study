@@ -1,0 +1,21 @@
+FROM ubuntu:22.04
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt update \
+    && apt install -qq -y init systemd \
+    && apt install -qq -y build-essential \
+    && apt install -qq -y tzdata locales\
+    && apt install -qq -y openssh-server \
+    && apt install -qq -y vim curl gettext \
+    && apt-get clean autoclean \
+    && apt-get -y autoremove \
+    && rm -rf /var/lib/{apt, dpkg, cache, log}
+
+RUN systemctl enable ssh.service
+
+RUN locale-gen ko_KR.utf8
+ENV LC_ALL=ko_KR.utf8
+WORKDIR /root
+
+EXPOSE 22

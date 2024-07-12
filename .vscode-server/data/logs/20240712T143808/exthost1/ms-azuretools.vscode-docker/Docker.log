@@ -1,0 +1,2 @@
+2024-07-12 15:49:05.224 [error] stat: cannot statx '/usr/local/src/tomcat/webapps/ROOT/WEB-INF/classes/templates/*': No such file or directory
+

@@ -1,0 +1,2 @@
+2024-07-11 11:48:15.763 [error] stat: cannot statx '/usr/local/src/tomcat/webapps/ROOT/WEB-INF/classes/static/*': No such file or directory
+
