@@ -1,0 +1,20 @@
+# 빌드 스테이지
+FROM gradle:8.8-jdk17 AS builder
+
+WORKDIR /dockertest
+
+COPY build.gradle settings.gradle /build/
+RUN gradle build -x test --parallel --continue > /dev/null 2>&1 || true
+
+COPY . /dockertest
+
+RUN gradle build -x test --parallel
+
+# 실행 스테이지
+FROM openjdk:17.0-slim
+
+WORKDIR /dockertest
+COPY --from=builder /app/build/libs/*.war app.war
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.war"]

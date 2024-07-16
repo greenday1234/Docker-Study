@@ -1,0 +1,22 @@
+# 빌드 스테이지
+FROM gradle:8.8-jdk17 AS builder
+
+WORKDIR /test/dockertest
+
+COPY build.gradle.kts settings.gradle.kts ./
+
+# 종속성을 다운로드합니다
+RUN gradle build -x test --no-daemon || true
+
+COPY . /test/dockertest
+
+RUN gradle bootJar --no-daemon
+
+# 실행 스테이지
+FROM openjdk:17.0-slim
+
+WORKDIR /test/dockertest
+COPY --from=builder /test/dockertest/build/libs/*.war app.war
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.war"]

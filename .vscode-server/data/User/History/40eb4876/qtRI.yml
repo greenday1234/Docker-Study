@@ -1,0 +1,12 @@
+services:
+    apache1:
+        build:
+            context: .
+            dockerfile: ./DockerfileMultiStage
+        container_name: webapp
+        hostname: webapp
+        privileged: true
+        stdin_open: true   
+        restart: always
+        ports:
+            - "8080:8080"

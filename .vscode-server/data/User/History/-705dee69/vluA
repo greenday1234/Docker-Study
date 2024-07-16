@@ -1,0 +1,17 @@
+# 빌드 스테이지
+FROM gradle:8.8-jdk17 AS builder
+
+WORKDIR /app/dockertest
+
+COPY . .
+
+RUN gradle clean build
+
+# 실행 스테이지
+FROM openjdk:17.0-slim
+
+WORKDIR /app/dockertest
+COPY --from=builder /app/build/libs/*.jar app.jar
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]

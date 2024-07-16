@@ -1,0 +1,18 @@
+# 빌드 스테이지
+FROM gradle:7.4.2-jdk17 AS builder
+
+WORKDIR /app/docketest
+COPY build.gradle.kts settings.gradle.kts ./
+RUN gradle clean build -x test --no-daemon
+
+COPY . .
+RUN gradle bootJar --no-daemon
+
+# 실행 스테이지
+FROM openjdk:17.0-slim
+
+WORKDIR /app/dockertest
+COPY --from=builder /app/build/libs/*.jar app.jar
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]

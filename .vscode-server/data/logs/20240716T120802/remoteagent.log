@@ -1,0 +1,34 @@
+2024-07-16 12:08:02.800 [info] 
+
+
+
+
+2024-07-16 12:08:02.816 [info] Extension host agent started.
+2024-07-16 12:08:02.919 [info] [<unknown>][e48a79ac][ExtensionHostConnection] New connection established.
+2024-07-16 12:08:02.932 [info] [<unknown>][3a982b74][ManagementConnection] New connection established.
+2024-07-16 12:08:03.007 [info] [<unknown>][e48a79ac][ExtensionHostConnection] <2998> Launched Extension Host Process.
+2024-07-16 12:08:05.888 [info] Getting Manifest... hashicorp.terraform
+2024-07-16 12:08:06.100 [info] Installing extension: hashicorp.terraform {"productVersion":{"version":"1.91.1","date":"2024-07-09T22:06:49.809Z"},"pinned":false,"isApplicationScoped":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"}}
+2024-07-16 12:08:09.593 [info] Extension signature verification result for hashicorp.terraform: Success. Executed: true. Duration: 2240ms.
+2024-07-16 12:08:10.018 [info] Extracted extension to file:///root/.vscode-server/extensions/hashicorp.terraform-2.32.0-linux-x64: hashicorp.terraform
+2024-07-16 12:08:10.023 [info] Renamed to /root/.vscode-server/extensions/hashicorp.terraform-2.32.0-linux-x64
+2024-07-16 12:08:10.035 [info] Marked extension as uninstalled hashicorp.terraform-2.31.0-linux-x64
+2024-07-16 12:08:10.051 [info] Extension installed successfully: hashicorp.terraform file:///root/.vscode-server/extensions/extensions.json
+2024-07-16 12:08:12.605 [info] [<unknown>][476898ff][ManagementConnection] New connection established.
+2024-07-16 12:08:12.612 [info] [<unknown>][9c39b03e][ExtensionHostConnection] New connection established.
+2024-07-16 12:08:12.615 [info] [<unknown>][9c39b03e][ExtensionHostConnection] <3149> Launched Extension Host Process.
+2024-07-16 12:08:39.551 [info] [<unknown>][3a982b74][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-07-16 12:13:02.817 [info] New EH opened, aborting shutdown
+2024-07-16 12:13:02.818 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/out/vs/server/node/server.main.js:192:6383)
+    at process.emit (node:events:518:28)
+2024-07-16 12:13:12.705 [info] [<unknown>][e48a79ac][ExtensionHostConnection] <2998> Extension Host Process exited with code: 0, signal: null.
+2024-07-16 13:13:31.300 [info] [<unknown>][476898ff][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-07-16 13:49:33.344 [info] [<unknown>][3a982b74][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-07-16 13:49:33.345 [info] [<unknown>][476898ff][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2024-07-16 13:49:33.345 [info] [<unknown>][2c49af43][ManagementConnection] New connection established.
+2024-07-16 13:49:33.352 [info] [<unknown>][913578ac][ExtensionHostConnection] New connection established.
+2024-07-16 13:49:33.355 [info] [<unknown>][913578ac][ExtensionHostConnection] <6082> Launched Extension Host Process.
+2024-07-16 13:54:33.407 [info] [<unknown>][3a982b74][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2024-07-16 13:54:33.409 [info] [<unknown>][476898ff][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2024-07-16 13:54:33.512 [info] [<unknown>][9c39b03e][ExtensionHostConnection] <3149> Extension Host Process exited with code: 0, signal: null.

@@ -1,0 +1,24 @@
+FROM gradle:8.8-jdk17 AS BUILD
+
+ENV APP_HOME=/test/dockertest
+WORKDIR $APP_HOME
+
+COPY gradle $APP_HOME/gradle
+COPY build.gradle settings.gradle gradlew $APP_HOME/
+COPY src $APP_HOME/src
+
+USER root
+RUN chmod +x gradlew
+
+RUN ./gradlew clean build
+
+# Final Stage
+FROM openjdk:17.0-slim
+ENV APP_HOME=/dockertest
+ENV JAR_FILE=/dockertest/build/libs/*.jar
+
+WORKDIR $APP_HOME
+
+COPY --from=BUILD ${JAR_FILE} /app.jar
+
+ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=${active}", "-Duser.timezone=Asia/Seoul", "/app.jar"]

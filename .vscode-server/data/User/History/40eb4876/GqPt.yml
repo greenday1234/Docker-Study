@@ -1,0 +1,13 @@
+services:
+    apache1:
+        build:
+            context: .
+            dockerfile: ./DockerfileMultiStage
+        container_name: webapp
+        hostname: webapp
+        privileged: true
+        stdin_open: true   
+        restart: always
+        ports:
+            - "8080:8080"
+        command: bash -c "echo root:${ROOT_PASSWORD} | chpasswd && /sbin/init"
